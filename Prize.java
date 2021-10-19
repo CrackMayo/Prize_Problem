@@ -27,5 +27,11 @@ public class Prize {
            items2[i] = Long.parseLong(items[i]);
         }
         int numMax = n;
+        for(int i = 0; i < n - 1; i++){
+            if((items2[i] + items2[i + 1] ) > x){             
+                numMax--;
+            }
+        }
+        System.out.println(numMax);
     }
 }
